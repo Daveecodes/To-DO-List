@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <video class="background-video" src="./videos/180503_02_PurpleGrid.mp4" autoplay loop></video>
+          <div class="todo_panel">
+              <div class="todo_text">
+                <h2 class="todo_title">To Do List</h2>
+                <div class="todo_icon">
+                    <img src="./images/questionnaire.png" alt="To Do List icon">
+                </div>
+              </div>
+              <div class="todo_input">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <button class="button" onclick="addTask()">
+                    <p class="button-text">Add</p>
+                </button>
+              </div>
+              <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+              </ul>
+              <button class="button reset_button" onclick="reset()">
+                <p class="button-text">Reset</p>
+              </button>
+          </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
